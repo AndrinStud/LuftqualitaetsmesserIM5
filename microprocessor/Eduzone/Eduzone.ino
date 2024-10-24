@@ -43,13 +43,13 @@ void setup() {
 }
 
 int setSensorpinAndRoom(){
-  if (analogRead(1) != 769){
+  if (analogRead(1) != 0){
     room = "4184bd33-91fb-11ef-be33-c4cbe1d62274"; // für I-0.31
     Serial.print(analogRead(1));
     Serial.println(" Daten für I-0.31 werden gesammelt...");
     return sensorpin = 1;
   }
-  else if (analogRead(0) != 400){
+  else if (analogRead(0) != 0){
     room = "4184bd0a-91fb-11ef-be33-c4cbe1d62274"; // für I-0.30  
     Serial.print(analogRead(0));
     Serial.println(" Daten für I-0.30 werden gesammelt...");
