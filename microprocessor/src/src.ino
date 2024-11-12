@@ -13,13 +13,11 @@
 #include "driver/gpio.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
+#include "env_config.h"
 
 unsigned long lastTime = 0;
 unsigned long timerDelay = 15000; // alle 15s wird ein neuer Wert verschickt
 
-//Werte um sich mit dem Igloo-Netzwerk zu verbinden
-const char* ssid     = "Igloo";
-const char* pass     = "1glooVision";
 const char* serverURL = "http://www.waschbaeraugen.ch/php/load.php"; 
 
 //Werte um zu erkennen, an welchem Pin der Gassensor angeschlossen ist
@@ -80,13 +78,13 @@ void setup() {
   Serial.begin(115200);
 
   ////////////////////////////////////////////////////////////// Verbindung mit Wi-Fi herstellen
-  WiFi.begin(ssid, pass);
-  Serial.println("Connecting");
+  WiFi.begin(NETWORK_SSID, NETWORK_PASS);
+  Serial.printf("Connecting to %s with password %s\n", NETWORK_SSID, NETWORK_PASS);
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
     Serial.print(".");
   }
-  Serial.printf("\nWiFi connected: SSID: %s, IP Address: %s\n", ssid, WiFi.localIP().toString().c_str());
+  Serial.printf("\nWiFi connected: SSID: %s, IP Address: %s\n", NETWORK_SSID, WiFi.localIP().toString().c_str());
 
   ////////////////////////////////////////////////////////////// SensorPin und Raum-ID festlegen
   setSensorPinAndRoom();
@@ -103,17 +101,14 @@ void loop() {
     Serial.print(sensorValue,   DEC);               // prints the value read
     Serial.println(" PPM");                                 //   wait 100ms for next reading
 
-    
     ////////////////////////////////////////////////////////////// JSON zusammenbauen
 
     JSONVar dataObject;
     dataObject["room"] = room;
     dataObject["air_quality"] = sensorValue;
     String jsonString = JSON.stringify(dataObject);
-    // String jsonString = "{\"sensor\":\"fiessling\", \"wert\":77}";  // stattdessen könnte man den JSON string auch so zusammenbauen
 
-  
-     ////////////////////////////////////////////////////////////// JSON string per HTTP POST request an den Server schicken (server2db.php)
+    ////////////////////////////////////////////////////////////// JSON string per HTTP POST request an den Server schicken (server2db.php)
 
     if (WiFi.status() == WL_CONNECTED) {   // Überprüfen, ob Wi-Fi verbunden ist
       // HTTP Verbindung starten und POST-Anfrage senden

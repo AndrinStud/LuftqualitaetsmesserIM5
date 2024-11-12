@@ -1,3 +1,5 @@
 .vscode/
 .env
 .DS_Store
+microprocessor/src/env_config.h
+microprocessor/.gitignore
