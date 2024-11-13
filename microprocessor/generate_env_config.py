@@ -15,5 +15,5 @@ def generate_header(env_file, header_file):
 
 if __name__ == "__main__":
     env_file = '../.env'
-    header_file = 'AirqualityMeasure/env_config.h'
+    header_file = 'src/env_config.h'
     generate_header(env_file, header_file)
