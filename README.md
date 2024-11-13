@@ -33,12 +33,11 @@
 1. Auf oberster Ebene Datei **.env** erstellen
 2. Folgendes muss dort rein:
 
-      DB_HOST=DATENBANKHOST
-      DB_NAME=DATENBANKNAME
-      DB_USER=BENUTZERNAME
-      DB_PASS=PASSWORT
-      NETWORK_SSID=NETZWERKNAME
-      NETWORK_PASS=NETZWERKPASSWORT
+    	DB_NAME=DATENBANKNAME
+    	DB_USER=BENUTZERNAME
+    	DB_PASS=PASSWORT
+        NETWORK_SSID=NETZWERKNAME
+        NETWORK_PASS=NETZWERKPASSWORT
 
     > **Wichtig:** *DATENBANKHOST*, *DATENBANKNAME*, *BENUTZERNAME* und *PASSWORT* müssen durch die Anmeldedaten der Datenbank deines Entwicklungsserver ersetzt werden! *NETZWERKNAME* und *NETZWERKPASSWORT* müssen durch die Netzwerk Logindaten für den Mikroprozessor ersetzt werden.
 
