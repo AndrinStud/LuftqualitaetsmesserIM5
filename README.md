@@ -38,8 +38,9 @@
     	DB_PASS=PASSWORT
         NETWORK_SSID=NETZWERKNAME
         NETWORK_PASS=NETZWERKPASSWORT
+        API_KEY=APISCHLUESSEL
 
-    > **Wichtig:** *DATENBANKHOST*, *DATENBANKNAME*, *BENUTZERNAME* und *PASSWORT* müssen durch die Anmeldedaten der Datenbank deines Entwicklungsserver ersetzt werden! *NETZWERKNAME* und *NETZWERKPASSWORT* müssen durch die Netzwerk Logindaten für den Mikroprozessor ersetzt werden.
+    > **Wichtig:** *DATENBANKHOST*, *DATENBANKNAME*, *BENUTZERNAME* und *PASSWORT* müssen durch die Anmeldedaten der Datenbank deines Entwicklungsserver ersetzt werden. *NETZWERKNAME* und *NETZWERKPASSWORT* müssen durch die Netzwerk Logindaten für den Mikroprozessor ersetzt werden. APISCHLUESSEL muss durch einen beliebigen API-Schlüssel ersetzt werden.
 
 ## Schritt 3: Mikroprozessorentwicklung einrichten
 1. Python installieren falls noch nicht geschehen
