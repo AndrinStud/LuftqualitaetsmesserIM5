@@ -106,6 +106,7 @@ void loop() {
     JSONVar dataObject;
     dataObject["room"] = room;
     dataObject["air_quality"] = sensorValue;
+    dataObject["api_key"] = API_KEY;
     String jsonString = JSON.stringify(dataObject);
 
     ////////////////////////////////////////////////////////////// JSON string per HTTP POST request an den Server schicken (server2db.php)
