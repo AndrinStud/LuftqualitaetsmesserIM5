@@ -6,7 +6,7 @@
 4. Folgendes muss dort rein:
 
     	{
-          "name": "Waschbaeraugen",
+          "name": "DEIN WUNSCHNAME",
           "host": "HOST",
           "protocol": "ftp",
           "port": 21,
@@ -26,18 +26,19 @@
               "microprocessor"
           ]
       }
+   
     > **Wichtig:** *HOST*, *USERNAME* und *PASSWORD* müssen nun durch die FTP-Anmeldedaten des Entwicklungsserver ersetzt werden!
 
 ## Schritt 2: Umgebungsvariablen einrichten
 1. Auf oberster Ebene Datei **.env** erstellen
 2. Folgendes muss dort rein:
 
-    	DB_HOST=DATENBANKHOST
+      DB_HOST=DATENBANKHOST
       DB_NAME=DATENBANKNAME
       DB_USER=BENUTZERNAME
       DB_PASS=PASSWORT
-      NETWORK_SSID=Igloo
-      NETWORK_PASS=1glooVision
+      NETWORK_SSID=NETZWERKNAME
+      NETWORK_PASS=NETZWERKPASSWORT
 
     > **Wichtig:** *DATENBANKHOST*, *DATENBANKNAME*, *BENUTZERNAME* und *PASSWORT* müssen durch die Anmeldedaten der Datenbank deines Entwicklungsserver ersetzt werden! *NETZWERKNAME* und *NETZWERKPASSWORT* müssen durch die Netzwerk Logindaten für den Mikroprozessor ersetzt werden.
 
