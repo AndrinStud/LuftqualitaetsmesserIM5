@@ -16,7 +16,7 @@
 #include "env_config.h"
 
 unsigned long lastTime = 0;
-unsigned long timerDelay = 15000; // alle 15s wird ein neuer Wert verschickt
+unsigned long timerDelay = 900000; // alle 15min wird ein neuer Wert verschickt
 
 const char* serverURL = "http://www.waschbaeraugen.ch/php/load.php"; 
 
