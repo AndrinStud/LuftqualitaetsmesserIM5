@@ -18,7 +18,7 @@ try {
     $pdo = new PDO($dsn, $db_user, $db_pass);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $sql = "SELECT * FROM air_quality_measure WHERE room = '4184bb7c-91fb-11ef-be33-c4cbe1d62274' ORDER BY creation_date DESC LIMIT 100"; # nur letzten 200 Daten holen
+    $sql = "SELECT * FROM air_quality_measure WHERE room = '4184bcdc-91fb-11ef-be33-c4cbe1d62274' ORDER BY creation_date ASC LIMIT 100"; # nur letzten 200 Daten holen
 
     $stmt = $pdo->prepare($sql);
     $stmt->execute();

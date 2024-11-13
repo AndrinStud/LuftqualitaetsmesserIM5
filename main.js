@@ -21,8 +21,8 @@ async function main() {
     let data = await fetchData();
     console.log(data);
 
-    let wert = data.data.wert;
-    let zeit = data.data.zeit;
+    let wert = data.data.airQuality;
+    let zeit = data.data.creationDate;
 
     // Hier legst du die Art des Diagramms (Line Chart) fest und fütterst die beiden Datenarrays rein
     const config = {
@@ -31,7 +31,7 @@ async function main() {
             labels: zeit,
             datasets: 
             [{
-                label: 'Wert',
+                label: 'Luftqualität in PPM',
                 data: wert,
                 backgroundColor: 'red',
                 borderColor: 'red',
