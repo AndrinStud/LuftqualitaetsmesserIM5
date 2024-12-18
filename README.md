@@ -42,7 +42,10 @@
 
     > **Wichtig:** *DATENBANKHOST*, *DATENBANKNAME*, *BENUTZERNAME* und *PASSWORT* müssen durch die Anmeldedaten der Datenbank deines Entwicklungsserver ersetzt werden. *NETZWERKNAME* und *NETZWERKPASSWORT* müssen durch die Netzwerk Logindaten für den Mikroprozessor ersetzt werden. APISCHLUESSEL muss durch einen beliebigen API-Schlüssel ersetzt werden.
 
-## Schritt 3: Mikroprozessorentwicklung einrichten
+## Schritt 3: Mikroprozessor richtig stecken:
+![](img/Steckplan.jpg?raw=true)
+
+## Schritt 4: Mikroprozessorentwicklung einrichten
 1. Python installieren falls noch nicht geschehen
 2. Die PlatformIO IDE Extension von PlatformIO installieren
 3. Darin den microprocessor Ordner öffnen
