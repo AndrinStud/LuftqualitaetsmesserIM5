@@ -42,7 +42,14 @@
 
     > **Wichtig:** *DATENBANKHOST*, *DATENBANKNAME*, *BENUTZERNAME* und *PASSWORT* müssen durch die Anmeldedaten der Datenbank deines Entwicklungsserver ersetzt werden. *NETZWERKNAME* und *NETZWERKPASSWORT* müssen durch die Netzwerk Logindaten für den Mikroprozessor ersetzt werden. APISCHLUESSEL muss durch einen beliebigen API-Schlüssel ersetzt werden.
 
-## Schritt 3: Mikroprozessor richtig stecken:
+## Schritt 3: Mikroprozessorsteckplan richtig stecken:
+Folgende Komponenten braucht es für einen (der fünf) Luftqualitätsmesser:
+- 5 Kabel (2x positiv, 2x negativ, 1x Signal)
+- Steckboard
+- Mikroprozessor esp32-c6
+- Gassensor
+- Kompensator
+Damit kann dann folgendermassen gesteckt werden:
 ![](img/Steckplan.jpg?raw=true)
 
 ## Schritt 4: Mikroprozessorentwicklung einrichten
