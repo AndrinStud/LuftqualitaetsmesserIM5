@@ -1,4 +1,26 @@
+# Inhaltsverzeichnis
+- [Dokumentation](#dokumentation)
+  - [Zweck des Projekts und Link](#zweck-des-projekts-und-link)
+  - [Aufbau und Funktionsweise Code](#aufbau-und-funktionsweise-code)
+    - [Mikroprozessorcode](#mikroprozessorcode)
+    - [Datenbankaufbau](#datenbankaufbau)
+    - [Datenverarbeitung (PHP)](#datenverarbeitung-php)
+    - [Visualisierung (HTML und JavaScript)](#visualisierung-html-und-javascript)
+  - [Known Bugs](#known-bugs)
+  - [Reflexion und Umsetzungsprozess](#reflexion-und-umsetzungsprozess)
+    - [Herausforderungen beim Verständnis der Schaltpläne](#herausforderungen-beim-verständnis-der-schaltpläne)
+    - [Programmierung in VSCode](#programmierung-in-vscode)
+    - [Probleme bei der Verteilung der Luftqualitätsmesser](#probleme-bei-der-verteilung-der-luftqualitätsmesser)
+    - [Sicherheitsmassnahmen](#sicherheitsmassnahmen)
+    - [Nutzung von Copilot](#nutzung-von-copilot)
+- [Anleitung zum Start (Programmierung in VS Code)](#anleitung-zum-start-programmierung-in-vs-code)
+  - [Schritt 1: Variablen für Visual Studio SFTP-Extension einrichten](#schritt-1-variablen-für-visual-studio-sftp-extension-einrichten)
+  - [Schritt 2: Umgebungsvariablen einrichten](#schritt-2-umgebungsvariablen-einrichten)
+  - [Schritt 3: Mikroprozessorsteckplan richtig stecken](#schritt-3-mikroprozessorsteckplan-richtig-stecken)
+  - [Schritt 4: Mikroprozessorentwicklung einrichten](#schritt-4-mikroprozessorentwicklung-einrichten)
+
 # Dokumentation
+
 ## Zweck des Projekts und Link
 Der Zweck dieses Projekts ist es, die Luftqualität in verschiedenen Räumen des Medienhauses der FHGR zu überwachen. Durch die kontinuierliche Messung und Visualisierung der Luftqualität können potenzielle Gesundheitsrisiken frühzeitig erkannt und entsprechende Massnahmen ergriffen werden. Das System besteht aus mehreren Luftqualitätsmessern, die Sensordaten erfassen und diese an einen Server senden, wo sie verarbeitet und visualisiert werden.
 
